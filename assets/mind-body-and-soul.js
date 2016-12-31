@@ -1635,7 +1635,7 @@ catch(err) {
 /* jshint ignore:start */
 
 if (!runningTests) {
-  require("mind-body-and-soul/app")["default"].create({"name":"mind-body-and-soul","version":"0.0.0+f2c83f36"});
+  require("mind-body-and-soul/app")["default"].create({"name":"mind-body-and-soul","version":"0.0.0+05451c9c"});
 }
 
 /* jshint ignore:end */
