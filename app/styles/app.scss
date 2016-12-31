@@ -7,6 +7,23 @@
 @import "affinity-engine/styles/full";
 @import "affinity-engine/styles/paper";
 @import "affinity-engine/styles/transparent";
+@import "affinity-engine/menu-bar";
 @import "affinity-engine/stage";
 @import "affinity-engine/stage/direction/image";
 @import "affinity-engine/stage/direction/text";
+
+.et-curtain, .ae-curtain, .ember-progress-bar {
+  height: 100%;
+}
+
+.ember-progress-bar svg {
+  margin-top: 1%;
+  height: 95%;
+  color: #fff;
+}
+
+.ae-cover {
+  div {
+    width: 100%;
+  }
+}

@@ -1,3 +1,22 @@
-{{#affinity-engine as |engine|}}
-  {{affinity-engine-stage engineId=engine.engineId initialScene="intro"}}
+{{#affinity-engine engineId="mind-body-and-soul" config=config fixtures=fixtures isFocused=isFocused as |engine|}}
+  {{#if engine.isLoaded}}
+    {{affinity-engine-stage engineId=engine.engineId initialScene="intro"}}
+
+    {{#affinity-engine-menu-bar engineId=engine.engineId}}
+      {{affinity-engine-menu-bar-button-resize engineId=engine.engineId}}
+      {{affinity-engine-menu-bar-button-reset engineId=engine.engineId}}
+      {{affinity-engine-menu-bar-button-rewind engineId=engine.engineId}}
+      {{affinity-engine-menu-bar-button-load engineId=engine.engineId}}
+      {{affinity-engine-menu-bar-button-save engineId=engine.engineId}}
+    {{/affinity-engine-menu-bar}}
+  {{else}}
+    {{#affinity-engine-curtain engineId=engine.engineId filesToPreload=(hash keyframes="src") completePreload=engine.completePreload as |curtain|}}
+      {{ember-progress-bar
+        shape="Circle"
+        progress=curtain.progress
+        useDefaultStep=true
+        options=progressBarOptions
+      }}
+    {{/affinity-engine-curtain}}
+  {{/if}}
 {{/affinity-engine}}
