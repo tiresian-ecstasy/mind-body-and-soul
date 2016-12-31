@@ -13,7 +13,7 @@
     "build": "ember build",
     "start": "ember server",
     "test": "ember test",
-    "deploy": "ember github-pages:commit --message \"Deploy gh-pages from commit $(git rev-parse HEAD)\"; git push; git checkout -"
+    "deploy": "ember github-pages:commit --message \"Deploy gh-pages from commit $(git rev-parse HEAD)\" --environment=development; git push; git checkout -"
   },
   "devDependencies": {
     "affinity-engine-visual-novel-bundle": "git+https://github.com/affinity-engine/affinity-engine-visual-novel-bundle.git",
@@ -38,7 +38,6 @@
     "ember-export-application-global": "^1.0.5",
     "ember-font-awesome": "2.2.0",
     "ember-load-initializers": "^0.5.1",
-    "ember-progress-bar": "0.0.6",
     "ember-resolver": "^2.0.3",
     "loader.js": "^4.0.10"
   },
