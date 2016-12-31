@@ -578,6 +578,14 @@ define('mind-body-and-soul/components/ember-lxl', ['exports', 'ember-letter-by-l
     }
   });
 });
+define('mind-body-and-soul/components/ember-progress-bar', ['exports', 'ember-progress-bar/components/ember-progress-bar'], function (exports, _emberProgressBarComponentsEmberProgressBar) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _emberProgressBarComponentsEmberProgressBar['default'];
+    }
+  });
+});
 define('mind-body-and-soul/components/fa-icon', ['exports', 'ember-font-awesome/components/fa-icon'], function (exports, _emberFontAwesomeComponentsFaIcon) {
   Object.defineProperty(exports, 'default', {
     enumerable: true,
@@ -1635,7 +1643,7 @@ catch(err) {
 /* jshint ignore:start */
 
 if (!runningTests) {
-  require("mind-body-and-soul/app")["default"].create({"name":"mind-body-and-soul","version":"0.0.0+05451c9c"});
+  require("mind-body-and-soul/app")["default"].create({"name":"mind-body-and-soul","version":"0.0.0+368a0cf9"});
 }
 
 /* jshint ignore:end */
