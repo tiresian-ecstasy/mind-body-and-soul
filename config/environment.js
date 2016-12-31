@@ -42,7 +42,7 @@ module.exports = function(environment) {
     ENV.APP.rootElement = '#ember-testing';
   }
 
-  if (environment === 'github') {
+  if (environment === 'production') {
     ENV.locationType = 'hash';
     ENV.rootURL = '/mind-body-and-soul/';
 
